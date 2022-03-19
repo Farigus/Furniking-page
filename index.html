@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Flow+Circular&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Flow+Circular&family=Mulish&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    
+  </head>
+  <body>
+    <header class="header container-fluid">
+      <div class="header__wrapper container-fluid font_rubik">
+        <div class="header__text">Welcome to our online shop</div>
+        <div class="header__actions">
+          <div class="header__actions_currency">
+            <div class="header__currency_item">English (USD)</div>
+            <div class="header__currency_arrow"></div>
+          </div>
+          <div class="header__actions_line"></div>
+          <div class="header__actions_user">Login or Sign up</div>
+        </div>
+      </div>
+    </header>
+
+    <section class="search wrapper_section container-fluid">
+      <div
+        class="search__wrapper d-flex justify-content-between align-items-center flex-wrap container-fluid font_rubik"
+      >
+        <div
+          class="search__logo d-flex justify-content-between align-items-center"
+        >
+          <div class="search__logo_pic"></div>
+          <div class="search__logo_text">Furniking</div>
+        </div>
+        <div class="search__search d-flex">
+          <input
+            onfocus="if(value=='Search here') value = ''"
+            action="none"
+            value="Search here"
+            type="email"
+            class="search__search_field"
+          />
+          <div class="search__search_category d-flex justify-content-center align-items-center">
+            <div class="search__category_wrapper d-flex justify-content-between">
+              <div class="search__category_text color_primary d-flex justify-content-center align-items-center">Categories</div>
+              <img class="search__category_arrow" src="pics/search__arrow.svg" alt=""></img>
+            </div>
+          </div>
+          <div class="search__search_button d-flex justify-content-center align-items-center">
+            <img class="search__button_item" src="pics/search__zoom.svg" alt=""></img>
+          </div>
+        </div>
+        <div class="search__actions d-flex justify-content-between">
+          <img class="search__actions_item" src="pics/search__cart.svg" alt=""></img>
+          <img class="search__actions_item" src="pics/search__bell.png" alt=""></img>
+          <img class="search__actions_item" src="pics/search__user.png" alt=""></img>
+        </div>
+      </div>
+    </section>
+
+    <section class="top-menu d-flex justify-content-center">
+      <div class="top-menu__wrapper wrapper_section  d-flex container-fluid flex-wrap">
+        <div class="top-menu__button d-flex justify-content-center align-items-center">
+          <img src="pics/top-menu__pic.svg" alt="">
+          <div class="top-menu__text font_rubik">ALL COLLECTIONS</div>
+        </div>
+        <ul class="top-menu__list d-flex align-items-center color_primary font_rubik flex-wrap">
+          <li class="top-menu__item d-flex align-items-center">HOME</li>
+          <li class="top-menu__item d-flex align-items-center">SHOP</li>
+          <li class="top-menu__item d-flex align-items-center">BLOG</li>
+          <li class="top-menu__item d-flex align-items-center">ABOUT</li>
+          <li class="top-menu__item d-flex align-items-center">CONTACT US</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="products d-flex justify-content-center">
+      <div class="products__wrapper wrapper_section d-flex flex-wrap container-fluid">
+        <ul class="products__navigation d-flex flex-column font_rubik">
+          <li class="products__navigation_item">
+            <a class="products__navigation_link" href="#">All</a>
+          </li>
+          <li class="products__navigation_item nav-item">
+            <a class="products__navigation_link" href="#">New Arrivals</a>
+          </li>
+          <li class="products__navigation_item nav-item">
+            <a class="products__navigation_link" href="#">Hot Sale</a>
+          </li>
+          <li class="products__navigation_item nav-item">
+            <a class="products__navigation_link" href="#">Furniture</a>
+          </li>
+          <li class="products__navigation_item nav-item">
+            <a class="products__navigation_link" href="#">Amrature</a>
+          </li>
+          <li class="products__navigation_item nav-item">
+            <a class="products__navigation_link" href="#">Tabble</a>
+          </li>
+          <li class="products__navigation_item nav-item">
+            <a class="products__navigation_link" href="#">Chair</a>
+          </li>
+          <li class="products__navigation_item nav-item">
+            <a class="products__navigation_link" href="#">Sofa</a>
+          </li>
+          <li class="products__navigation_item nav-item">
+            <a class="products__navigation_link" href="#">Mirrors</a>
+          </li>
+          <li class="products__navigation_item nav-item">
+            <a class="products__navigation_link" href="#">Stools</a>
+          </li>
+          <li class="products__navigation_item nav-item">
+            <a class="products__navigation_link products__navigation_link_last" href="#">Benches</a>
+          </li>
+        </ul>
+
+        <div class="products__offer d-flex flex-wrap">
+          <div class="products__offer_info d-flex flex-column">
+            <div class="products__info_title font_rubik">TOP COLLECTIONS 2022</div>
+            <div class="products__info_text font_rubik">We Serve Your 
+              Dream Furniture</div>
+            <img class="products__info_underline" src="pics/products__info_underline.svg"></img>
+            <div class="products__info_discount font_mulish">Get 50% off all products</div>
+            <button type="button" class="products__info_button d-flex justify-content-center align-items-center font_mulish">SHOP NOW</button>
+          </div>
+          <div class="products__offer_templates d-flex justify-content-between align-items-center">
+            <div class="products__templates_main d-flex flex-column">
+              <img src="pics/products__armchair.png" alt="" class="products__templates_pic"></img>
+              <div class="products__templates_slider d-flex justify-content-between align-items-center">
+                <div class="products__slider_item"></div>
+                <div class="products__slider_item"></div>
+                <div class="products__slider_item products__slider_item_active"></div>
+                <div class="products__slider_item"></div>
+              </div>
+            </div>
+            <div class="products__templates_list d-flex flex-column justify-content-between font_rubik">
+              <div class="products__list_item d-flex flex-column justify-content-between align-items-center">
+                <img src="pics/products__armchair_little_1.png" alt="" class="products__list_img">
+                <div class="products__list_price">$120</div>
+                <div class="products__list_name">Office Desk Chair</div>
+              </div>
+              <div class="products__list_item d-flex flex-column justify-content-between align-items-center">
+                <img src="pics/products__armchair_little_2.png" alt="" class="products__list_img">
+                <div class="products__list_price">$180</div>
+                <div class="products__list_name">Home Alisa Sofa</div>
+              </div>
+              <div class="products__list_item d-flex flex-column justify-content-between align-items-center">
+                <img src="pics/products__armchair_little_3.png" alt="" class="products__list_img">
+                <div class="products__list_price">$250</div>
+                <div class="products__list_name">Modern Chair</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+
+    <section class="feature d-flex justify-content-center">
+      <div class="feature__wrapper wrapper_section d-flex justify-content-between flex-wrap">
+        <div class="feature__item d-flex align-items-center">
+          <img src="pics/feature__shipping.svg" alt="" class="feature__item_image">
+          <div class="feature__item_info d-flex flex-column font_rubik">
+            <div class="feature__item_title">Free Shipping</div>
+            <div class="feature__item_text">Orders over $100</div>
+          </div>
+        </div>
+        <div class="feature__item d-flex align-items-center">
+          <img src="pics/feature__gift.svg" alt="" class="feature__item_image">
+          <div class="feature__item_info d-flex flex-column font_rubik">
+            <div class="feature__item_title">Smart Gift Card</div>
+            <div class="feature__item_text">Buy $1000 to get card</div>
+          </div>
+        </div>
+        <div class="feature__item d-flex align-items-center">
+          <img src="pics/feature__vallet.svg" alt="" class="feature__item_image">
+          <div class="feature__item_info d-flex flex-column font_rubik">
+            <div class="feature__item_title">Quick Payment</div>
+            <div class="feature__item_text">100% secure payment</div>
+          </div>
+        </div>
+        <div class="feature__item d-flex align-items-center">
+          <img src="pics/feature__support.svg" alt="" class="feature__item_image">
+          <div class="feature__item_info d-flex flex-column font_rubik">
+            <div class="feature__item_title">24/7 Support</div>
+            <div class="feature__item_text">Quick support</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="offer">
+      <div class="offer__wrapper wrapper_section d-flex justify-content-between flex-wrap">
+        <div class="offer__item_modern d-flex">
+          <div class="offer__item_modern_info offer__item_info d-flex flex-column justify-content-between font_mulish">
+            <div class="offer__item_title">Modern Furniture Collections</div>
+            <div class="offer__item_text">Starting from $500</div>
+            <div class="offer__item_link d-flex align-items-center"><div class="offer__link_text">Read more</div><img src="pics/offer__arrow.svg" alt="" class="offer__item_arrow"></div>
+          </div>
+        </div>
+        <div class="offer__right d-flex flex-column">
+          <div class="offer__item_geometric d-flex">
+            <div class="offer__item_geometric_info offer__item_info d-flex flex-column justify-content-between font_mulish">
+              <div class="offer__item_title">Geometric Bookcase</div>
+              <div class="offer__item_text">Up to 20% discount</div>
+              <div class="offer__item_link d-flex align-items-center"><div class="offer__link_text">Read more</div><img src="pics/offer__arrow.svg" alt="" class="offer__item_arrow"></div>
+            </div>
+          </div>
+          <div class="offer__item_minimal d-flex">
+            <div class="offer__item_minimal_info offer__item_info d-flex flex-column justify-content-between font_mulish">
+              <div class="offer__item_title">Minimal Sofa collections </div>
+              <div class="offer__item_text">Sale upto 40% discount</div>
+              <div class="offer__item_link d-flex align-items-center"><div class="offer__link_text">Read more</div><img src="pics/offer__arrow.svg" alt="" class="offer__item_arrow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trending">
+      <div class="trending__wrapper wrapper_section d-flex align-items-center flex-column font_mulish">
+        <div class="trending__title">TRENDING</div>
+        <div class="trending__category d-flex justify-content-between">
+          <div class="trending__category_item trending__category_item_active">Top Products</div>
+          <div class="trending__category_item">New Arrivals</div>
+          <div class="trending__category_item">
+            Best Sellers</div>
+        </div>
+        <div class="trending__products d-flex flex-wrap">
+          <!–– product item start ––>
+          <div class="trending__products_item product_card flex-column">
+            <div class="trending__products_pic_1 product_pic">
+              <div class="product_status product_status_new">New</div>
+              <div class="product_actions flex-column justify-content-between">
+                <div title="Add to favorite" class="product_actions_item product_actions_like">
+                  <div class="product_actions_pic_like"></div>
+                </div>
+                <div title="Add to your cart" class="product_actions_item product_actions_cart">
+                  <div class="product_actions_pic_cart"></div>
+                </div>
+                <div title="Refresh" class="product_actions_item product_actions_refresh">
+                  <div class="product_actions_pic_refresh"></div>
+                </div>
+                <div title="View the product" class="product_actions_item product_actions_view">
+                  <div class="product_actions_pic_view"></div>
+                </div>
+              </div>
+            </div>
+            <div class="product_type">Chair</div>
+            <div class="product_name font_rubik">Minimal LCD chair</div>
+            <div class="product_info d-flex justify-content-between align-items-center">
+              <div class="product_price d-flex justify-content-between">
+                <div class="product_price_discount">$180</div>
+                <div class="product_price_regular">$250</div>
+              </div>
+              <div class="product_rating rating_5 d-flex justify-content-between">
+                <div title="Rate the product" class="product_rating_star product_rating_star_5"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_4"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_3"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_2"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_1"></div>
+              </div>
+            </div>
+          </div>
+          <!–– product item end ––>
+
+          <div class="trending__products_item product_card flex-column">
+            <div class="trending__products_pic_2 product_pic">
+              <div class="product_status product_status_new">New</div>
+              <div class="product_actions flex-column justify-content-between">
+                <div title="Add to favorite" class="product_actions_item product_actions_like">
+                  <div class="product_actions_pic_like"></div>
+                </div>
+                <div title="Add to your cart" class="product_actions_item product_actions_cart">
+                  <div class="product_actions_pic_cart"></div>
+                </div>
+                <div title="Refresh" class="product_actions_item product_actions_refresh">
+                  <div class="product_actions_pic_refresh"></div>
+                </div>
+                <div title="View the product" class="product_actions_item product_actions_view">
+                  <div class="product_actions_pic_view"></div>
+                </div>
+              </div>
+            </div>
+            <div class="product_type">Chair</div>
+            <div class="product_name font_rubik">Minimal iconic chair</div>
+            <div class="product_info d-flex justify-content-between align-items-center">
+              <div class="product_price d-flex justify-content-between">
+                <div class="product_price_discount">$120</div>
+                <div class="product_price_regular">$150</div>
+              </div>
+              <div class="product_rating rating_4 d-flex justify-content-between">
+                <div title="Rate the product" class="product_rating_star product_rating_star_5"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_4"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_3"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_2"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_1"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="trending__products_item product_card flex-column">
+            <div class="trending__products_pic_3 product_pic">
+              <div class="product_status product_status_sale">Sale</div>
+              <div class="product_actions flex-column justify-content-between">
+                <div title="Add to favorite" class="product_actions_item product_actions_like">
+                  <div class="product_actions_pic_like"></div>
+                </div>
+                <div title="Add to your cart" class="product_actions_item product_actions_cart">
+                  <div class="product_actions_pic_cart"></div>
+                </div>
+                <div title="Refresh" class="product_actions_item product_actions_refresh">
+                  <div class="product_actions_pic_refresh"></div>
+                </div>
+                <div title="View the product" class="product_actions_item product_actions_view">
+                  <div class="product_actions_pic_view"></div>
+                </div>
+              </div>
+            </div>
+            <div class="product_type">Chair</div>
+            <div class="product_name font_rubik">Dining chairs</div>
+            <div class="product_info d-flex justify-content-between align-items-center">
+              <div class="product_price d-flex justify-content-between">
+                <div class="product_price_discount">$100</div>
+                <div class="product_price_regular">$120</div>
+              </div>
+              <div class="product_rating rating_5 d-flex justify-content-between">
+                <div title="Rate the product" class="product_rating_star product_rating_star_5"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_4"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_3"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_2"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_1"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="trending__products_item product_card flex-column">
+            <div class="trending__products_pic_4 product_pic">
+              <div class="product_status product_status_sale">Sale</div>
+              <div class="product_actions flex-column justify-content-between">
+                <div title="Add to favorite" class="product_actions_item product_actions_like">
+                  <div class="product_actions_pic_like"></div>
+                </div>
+                <div title="Add to your cart" class="product_actions_item product_actions_cart">
+                  <div class="product_actions_pic_cart"></div>
+                </div>
+                <div title="Refresh" class="product_actions_item product_actions_refresh">
+                  <div class="product_actions_pic_refresh"></div>
+                </div>
+                <div title="View the product" class="product_actions_item product_actions_view">
+                  <div class="product_actions_pic_view"></div>
+                </div>
+              </div>
+            </div>
+            <div class="product_type">Chair</div>
+            <div class="product_name font_rubik">Buskbo armchair </div>
+            <div class="product_info d-flex justify-content-between align-items-center">
+              <div class="product_price d-flex justify-content-between">
+                <div class="product_price_discount">$130</div>
+                <div class="product_price_regular">$150</div>
+              </div>
+              <div class="product_rating rating_4 d-flex justify-content-between">
+                <div title="Rate the product" class="product_rating_star product_rating_star_5"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_4"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_3"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_2"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_1"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="trending__products_item product_card flex-column">
+            <div class="trending__products_pic_5 product_pic">
+              <div class="product_status product_status_sale">Sale</div>
+              <div class="product_actions flex-column justify-content-between">
+                <div title="Add to favorite" class="product_actions_item product_actions_like">
+                  <div class="product_actions_pic_like"></div>
+                </div>
+                <div title="Add to your cart" class="product_actions_item product_actions_cart">
+                  <div class="product_actions_pic_cart"></div>
+                </div>
+                <div title="Refresh" class="product_actions_item product_actions_refresh">
+                  <div class="product_actions_pic_refresh"></div>
+                </div>
+                <div title="View the product" class="product_actions_item product_actions_view">
+                  <div class="product_actions_pic_view"></div>
+                </div>
+              </div>
+            </div>
+            <div class="product_type">Chair</div>
+            <div class="product_name font_rubik">Modern chairs</div>
+            <div class="product_info d-flex justify-content-between align-items-center">
+              <div class="product_price d-flex justify-content-between">
+                <div class="product_price_discount">$100</div>
+                <div class="product_price_regular">$120</div>
+              </div>
+              <div class="product_rating rating_5 d-flex justify-content-between">
+                <div title="Rate the product" class="product_rating_star product_rating_star_5"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_4"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_3"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_2"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_1"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="trending__products_item product_card flex-column">
+            <div class="trending__products_pic_6 product_pic">
+              <div class="product_status product_status_sale">Sale</div>
+              <div class="product_actions flex-column justify-content-between">
+                <div title="Add to favorite" class="product_actions_item product_actions_like">
+                  <div class="product_actions_pic_like"></div>
+                </div>
+                <div title="Add to your cart" class="product_actions_item product_actions_cart">
+                  <div class="product_actions_pic_cart"></div>
+                </div>
+                <div title="Refresh" class="product_actions_item product_actions_refresh">
+                  <div class="product_actions_pic_refresh"></div>
+                </div>
+                <div title="View the product" class="product_actions_item product_actions_view">
+                  <div class="product_actions_pic_view"></div>
+                </div>
+              </div>
+            </div>
+            <div class="product_type">Chair</div>
+            <div class="product_name font_rubik">Plastic dining chair</div>
+            <div class="product_info d-flex justify-content-between align-items-center">
+              <div class="product_price d-flex justify-content-between">
+                <div class="product_price_discount">$130</div>
+                <div class="product_price_regular">$150</div>
+              </div>
+              <div class="product_rating rating_4 d-flex justify-content-between">
+                <div title="Rate the product" class="product_rating_star product_rating_star_5"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_4"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_3"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_2"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_1"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="trending__products_item product_card flex-column">
+            <div class="trending__products_pic_7 product_pic">
+              <div class="product_status product_status_new">New</div>
+              <div class="product_actions flex-column justify-content-between">
+                <div title="Add to favorite" class="product_actions_item product_actions_like">
+                  <div class="product_actions_pic_like"></div>
+                </div>
+                <div title="Add to your cart" class="product_actions_item product_actions_cart">
+                  <div class="product_actions_pic_cart"></div>
+                </div>
+                <div title="Refresh" class="product_actions_item product_actions_refresh">
+                  <div class="product_actions_pic_refresh"></div>
+                </div>
+                <div title="View the product" class="product_actions_item product_actions_view">
+                  <div class="product_actions_pic_view"></div>
+                </div>
+              </div>
+            </div>
+            <div class="product_type">Chair</div>
+            <div class="product_name font_rubik">Minimal Wood chair</div>
+            <div class="product_info d-flex justify-content-between align-items-center">
+              <div class="product_price d-flex justify-content-between">
+                <div class="product_price_discount">$180</div>
+                <div class="product_price_regular">$250</div>
+              </div>
+              <div class="product_rating rating_5 d-flex justify-content-between">
+                <div title="Rate the product" class="product_rating_star product_rating_star_5"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_4"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_3"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_2"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_1"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="trending__products_item product_card flex-column">
+            <div class="trending__products_pic_8 product_pic">
+              <div class="product_status product_status_new">New</div>
+              <div class="product_actions flex-column justify-content-between">
+                <div title="Add to favorite" class="product_actions_item product_actions_like">
+                  <div class="product_actions_pic_like"></div>
+                </div>
+                <div title="Add to your cart" class="product_actions_item product_actions_cart">
+                  <div class="product_actions_pic_cart"></div>
+                </div>
+                <div title="Refresh" class="product_actions_item product_actions_refresh">
+                  <div class="product_actions_pic_refresh"></div>
+                </div>
+                <div title="View the product" class="product_actions_item product_actions_view">
+                  <div class="product_actions_pic_view"></div>
+                </div>
+              </div>
+            </div>
+            <div class="product_type">Chair</div>
+            <div class="product_name font_rubik">Elegent wood chair</div>
+            <div class="product_info d-flex justify-content-between align-items-center">
+              <div class="product_price d-flex justify-content-between">
+                <div class="product_price_discount">$120</div>
+                <div class="product_price_regular">$150</div>
+              </div>
+              <div class="product_rating rating_4 d-flex justify-content-between">
+                <div title="Rate the product" class="product_rating_star product_rating_star_5"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_4"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_3"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_2"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_1"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="trending__actions d-flex justify-content-between">
+          <div class="trending__actions_item"></div>
+          <div class="trending__actions_item trending__actions__item_active"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="special">
+      <div class="special__wrapper wrapper_section d-flex flex-column align-items-center font_mulish">
+        <div class="special__title">SPECIAL OFFER</div>
+        <div class="special__offer d-flex flex-wrap">
+
+          <!–– special item start ––>
+          <div class="special__item special__pic_1 d-flex justify-content-between">
+            <div class="special__item_info d-flex flex-column">
+              <div class="special__item_title">Living Room Furniture</div>
+              <div class="special__item_text">You don't have a chair. Are you ready for growth? Shop with us 40% discount!</div>
+              <div class="special__item_price d-flex justify-content-between align-items-center">
+                <div class="special__item_price_wrapper d-flex justify-content-between">
+                  <div class="special__price_discount">$150</div>
+                  <div class="special__price_regular">$250</div>
+                </div>
+                <button class="special__item_button">SHOP NOW</button>
+              </div>
+              <div class="special__countdown d-flex justify-content-between font_rubik">
+                <div class="special__countdown_days special__countdown_item">
+                  <div class="special__countdown_number">10</div>
+                  <div class="special__countdown_text">Days</div>
+                </div>
+                <div class="special__countdown_hours special__countdown_item">
+                  <div class="special__countdown_number">15</div>
+                  <div class="special__countdown_text">HRS</div>
+                </div>
+                <div class="special__countdown_mins special__countdown_item">
+                  <div id="special_1_min" class="special__countdown_number">30</div>
+                  <div class="special__countdown_text">MIN</div>
+                </div>
+                <div class="special__countdown_secs special__countdown_item">
+                  <div id="special_1_sec" class="special__countdown_number">22</div>
+                  <div class="special__countdown_text">SECS</div>
+                </div>
+              </div>
+            </div>
+            <div class="special__item_status">40% off</div>
+          </div>
+          <!–– special item end ––>
+
+
+
+
+          <div class="special__item special__pic_2 d-flex justify-content-between">
+            <div class="special__item_info d-flex flex-column">
+              <div class="special__item_title">Modern chair</div>
+              <div class="special__item_text">Hot chairs of the modern era are now available in our stock.</div>
+              <div class="special__item_price d-flex justify-content-between align-items-center">
+                <div class="special__item_price_wrapper d-flex justify-content-between">
+                  <div class="special__price_discount">$75</div>
+                  <div class="special__price_regular">$150</div>
+                </div>
+                <button class="special__item_button">SHOP NOW</button>
+              </div>
+              <div class="special__countdown d-flex justify-content-between font_rubik">
+                <div class="special__countdown_days special__countdown_item">
+                  <div class="special__countdown_number">15</div>
+                  <div class="special__countdown_text">Days</div>
+                </div>
+                <div class="special__countdown_hours special__countdown_item">
+                  <div class="special__countdown_number">08</div>
+                  <div class="special__countdown_text">HRS</div>
+                </div>
+                <div class="special__countdown_mins special__countdown_item">
+                  <div id="special_2_min" class="special__countdown_number">20</div>
+                  <div class="special__countdown_text">MIN</div>
+                </div>
+                <div class="special__countdown_secs special__countdown_item">
+                  <div id="special_2_sec" class="special__countdown_number">12</div>
+                  <div class="special__countdown_text">SECS</div>
+                </div>
+              </div>
+            </div>
+            <div class="special__item_status">50% off</div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <section class="our">
+      <div class="our__wrapper wrapper_section d-flex flex-column align-items-center font_mulish">
+        <div class="our__title">OUR PRODUCTS</div>
+        <div class="our__category d-flex justify-content-between">
+          <div class="our__category_item trending__category_item_active">All Products</div>
+          <div class="our__category_item">
+            New Arrivals</div>
+          <div class="our__category_item">
+            Best Sellers</div>
+            <div class="our__category_item">Todays Deals</div>
+        </div>
+        
+        <div class="our__products d-flex flex-wrap">
+
+          <div class="our__products_item product_card flex-column">
+            <div class="our__products_pic_1 product_pic">
+              <div class="product_status product_status_sale">Sale</div>
+              <div class="product_actions flex-column justify-content-between">
+                <div title="Add to favorite" class="product_actions_item product_actions_like">
+                  <div class="product_actions_pic_like"></div>
+                </div>
+                <div title="Add to your cart" class="product_actions_item product_actions_cart">
+                  <div class="product_actions_pic_cart"></div>
+                </div>
+                <div title="Refresh" class="product_actions_item product_actions_refresh">
+                  <div class="product_actions_pic_refresh"></div>
+                </div>
+                <div title="View the product" class="product_actions_item product_actions_view">
+                  <div class="product_actions_pic_view"></div>
+                </div>
+              </div>
+            </div>
+            <div class="product_type">Chair</div>
+            <div class="product_name font_rubik">Minimal LCD chair</div>
+            <div class="product_info d-flex justify-content-between align-items-center">
+              <div class="product_price d-flex justify-content-between">
+                <div class="product_price_discount">$180</div>
+                <div class="product_price_regular">$250</div>
+              </div>
+              <div class="product_rating rating_5 d-flex justify-content-between">
+                <div title="Rate the product" class="product_rating_star product_rating_star_5"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_4"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_3"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_2"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_1"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="our__products_item product_card flex-column">
+            <div class="our__products_pic_2 product_pic">
+              <div class="product_status product_status_new">New</div>
+              <div class="product_actions flex-column justify-content-between">
+                <div title="Add to favorite" class="product_actions_item product_actions_like">
+                  <div class="product_actions_pic_like"></div>
+                </div>
+                <div title="Add to your cart" class="product_actions_item product_actions_cart">
+                  <div class="product_actions_pic_cart"></div>
+                </div>
+                <div title="Refresh" class="product_actions_item product_actions_refresh">
+                  <div class="product_actions_pic_refresh"></div>
+                </div>
+                <div title="View the product" class="product_actions_item product_actions_view">
+                  <div class="product_actions_pic_view"></div>
+                </div>
+              </div>
+            </div>
+            <div class="product_type">sofa</div>
+            <div class="product_name font_rubik">Modern Sofa</div>
+            <div class="product_info d-flex justify-content-between align-items-center">
+              <div class="product_price d-flex justify-content-between">
+                <div class="product_price_discount">$120</div>
+                <div class="product_price_regular">$150</div>
+              </div>
+              <div class="product_rating rating_4 d-flex justify-content-between">
+                <div title="Rate the product" class="product_rating_star product_rating_star_5"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_4"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_3"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_2"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_1"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="our__products_item product_card flex-column">
+            <div class="our__products_pic_3 product_pic">
+              <div class="product_status product_status_discount">-30%</div>
+              <div class="product_actions flex-column justify-content-between">
+                <div title="Add to favorite" class="product_actions_item product_actions_like">
+                  <div class="product_actions_pic_like"></div>
+                </div>
+                <div title="Add to your cart" class="product_actions_item product_actions_cart">
+                  <div class="product_actions_pic_cart"></div>
+                </div>
+                <div title="Refresh" class="product_actions_item product_actions_refresh">
+                  <div class="product_actions_pic_refresh"></div>
+                </div>
+                <div title="View the product" class="product_actions_item product_actions_view">
+                  <div class="product_actions_pic_view"></div>
+                </div>
+              </div>
+            </div>
+            <div class="product_type">SOFA</div>
+            <div class="product_name font_rubik">Microfiber Sofa</div>
+            <div class="product_info d-flex justify-content-between align-items-center">
+              <div class="product_price d-flex justify-content-between">
+                <div class="product_price_discount">$130</div>
+                <div class="product_price_regular">$150</div>
+              </div>
+              <div class="product_rating rating_4 d-flex justify-content-between">
+                <div title="Rate the product" class="product_rating_star product_rating_star_5"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_4"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_3"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_2"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_1"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="our__products_item product_card flex-column">
+            <div class="our__products_pic_4 product_pic">
+              <div class="product_status product_status_sale">Sale</div>
+              <div class="product_actions flex-column justify-content-between">
+                <div title="Add to favorite" class="product_actions_item product_actions_like">
+                  <div class="product_actions_pic_like"></div>
+                </div>
+                <div title="Add to your cart" class="product_actions_item product_actions_cart">
+                  <div class="product_actions_pic_cart"></div>
+                </div>
+                <div title="Refresh" class="product_actions_item product_actions_refresh">
+                  <div class="product_actions_pic_refresh"></div>
+                </div>
+                <div title="View the product" class="product_actions_item product_actions_view">
+                  <div class="product_actions_pic_view"></div>
+                </div>
+              </div>
+            </div>
+            <div class="product_type">tabble</div>
+            <div class="product_name font_rubik">Wood Coffee Tables</div>
+            <div class="product_info d-flex justify-content-between align-items-center">
+              <div class="product_price d-flex justify-content-between">
+                <div class="product_price_discount">$100</div>
+                <div class="product_price_regular">$120</div>
+              </div>
+              <div class="product_rating rating_5 d-flex justify-content-between">
+                <div title="Rate the product" class="product_rating_star product_rating_star_5"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_4"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_3"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_2"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_1"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="our__products_item product_card flex-column">
+            <div class="our__products_pic_5 product_pic">
+              <div class="product_status product_status_discount">-30%</div>
+              <div class="product_actions flex-column justify-content-between">
+                <div title="Add to favorite" class="product_actions_item product_actions_like">
+                  <div class="product_actions_pic_like"></div>
+                </div>
+                <div title="Add to your cart" class="product_actions_item product_actions_cart">
+                  <div class="product_actions_pic_cart"></div>
+                </div>
+                <div title="Refresh" class="product_actions_item product_actions_refresh">
+                  <div class="product_actions_pic_refresh"></div>
+                </div>
+                <div title="View the product" class="product_actions_item product_actions_view">
+                  <div class="product_actions_pic_view"></div>
+                </div>
+              </div>
+            </div>
+            <div class="product_type">Chair</div>
+            <div class="product_name font_rubik">Acacia Wood Club Chairs</div>
+            <div class="product_info d-flex justify-content-between align-items-center">
+              <div class="product_price d-flex justify-content-between">
+                <div class="product_price_discount">$100</div>
+                <div class="product_price_regular">$120</div>
+              </div>
+              <div class="product_rating rating_5 d-flex justify-content-between">
+                <div title="Rate the product" class="product_rating_star product_rating_star_5"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_4"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_3"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_2"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_1"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="our__products_item product_card flex-column">
+            <div class="our__products_pic_6 product_pic">
+              <div class="product_status product_status_sale">Sale</div>
+              <div class="product_actions flex-column justify-content-between">
+                <div title="Add to favorite" class="product_actions_item product_actions_like">
+                  <div class="product_actions_pic_like"></div>
+                </div>
+                <div title="Add to your cart" class="product_actions_item product_actions_cart">
+                  <div class="product_actions_pic_cart"></div>
+                </div>
+                <div title="Refresh" class="product_actions_item product_actions_refresh">
+                  <div class="product_actions_pic_refresh"></div>
+                </div>
+                <div title="View the product" class="product_actions_item product_actions_view">
+                  <div class="product_actions_pic_view"></div>
+                </div>
+              </div>
+            </div>
+            <div class="product_type">Bench</div>
+            <div class="product_name font_rubik">Amalia Cowhide Bench</div>
+            <div class="product_info d-flex justify-content-between align-items-center">
+              <div class="product_price d-flex justify-content-between">
+                <div class="product_price_discount">$130</div>
+                <div class="product_price_regular">$150</div>
+              </div>
+              <div class="product_rating rating_4 d-flex justify-content-between">
+                <div title="Rate the product" class="product_rating_star product_rating_star_5"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_4"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_3"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_2"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_1"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="our__products_item product_card flex-column">
+            <div class="our__products_pic_7 product_pic">
+              <div class="product_status product_status_new">New</div>
+              <div class="product_actions flex-column justify-content-between">
+                <div title="Add to favorite" class="product_actions_item product_actions_like">
+                  <div class="product_actions_pic_like"></div>
+                </div>
+                <div title="Add to your cart" class="product_actions_item product_actions_cart">
+                  <div class="product_actions_pic_cart"></div>
+                </div>
+                <div title="Refresh" class="product_actions_item product_actions_refresh">
+                  <div class="product_actions_pic_refresh"></div>
+                </div>
+                <div title="View the product" class="product_actions_item product_actions_view">
+                  <div class="product_actions_pic_view"></div>
+                </div>
+              </div>
+            </div>
+            <div class="product_type">Storage</div>
+            <div class="product_name font_rubik">Juno-Hinged Lid Storage</div>
+            <div class="product_info d-flex justify-content-between align-items-center">
+              <div class="product_price d-flex justify-content-between">
+                <div class="product_price_discount">$180</div>
+                <div class="product_price_regular">$250</div>
+              </div>
+              <div class="product_rating rating_5 d-flex justify-content-between">
+                <div title="Rate the product" class="product_rating_star product_rating_star_5"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_4"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_3"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_2"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_1"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="our__products_item product_card flex-column">
+            <div class="our__products_pic_8 product_pic">
+              <div class="product_status product_status_new">New</div>
+              <div class="product_actions flex-column justify-content-between">
+                <div title="Add to favorite" class="product_actions_item product_actions_like">
+                  <div class="product_actions_pic_like"></div>
+                </div>
+                <div title="Add to your cart" class="product_actions_item product_actions_cart">
+                  <div class="product_actions_pic_cart"></div>
+                </div>
+                <div title="Refresh" class="product_actions_item product_actions_refresh">
+                  <div class="product_actions_pic_refresh"></div>
+                </div>
+                <div title="View the product" class="product_actions_item product_actions_view">
+                  <div class="product_actions_pic_view"></div>
+                </div>
+              </div>
+            </div>
+            <div class="product_type">Furniture</div>
+            <div class="product_name font_rubik">Delicia 3 Piece Living Room</div>
+            <div class="product_info d-flex justify-content-between align-items-center">
+              <div class="product_price d-flex justify-content-between">
+                <div class="product_price_discount">$120</div>
+                <div class="product_price_regular">$150</div>
+              </div>
+              <div class="product_rating rating_4 d-flex justify-content-between">
+                <div title="Rate the product" class="product_rating_star product_rating_star_5"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_4"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_3"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_2"></div>
+                <div title="Rate the product" class="product_rating_star product_rating_star_1"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="our__actions d-flex justify-content-between">
+          <button class="our__actions_button d-flex justify-content-center align-items-center">
+            <div class="our__button_text">Next page</div>
+            <img class="our__button_arrow" src="pics/our__button_arrow.svg" alt="">
+          </button>
+          <div class="our__actions_page d-flex align-items-center">
+            <div class="our__actions_text">Page</div>
+            <input
+            onfocus="if(value=='1') value = ''"
+            action="none"
+            value="1"
+            type="count"
+            class="our__actions_count"
+            />
+            <div class="our__actions_total">of 100</div>
+            <div class="our__actions_arrows d-flex">
+              <button class="our__actions_arrows_item our__actions_arrows_left d-flex">
+                <img src="pics/our__arrows_left.svg" alt="" class="our__arrows_left">
+              </button>
+              <button class="our__actions_arrows_item our__actions_arrows_right d-flex">
+                <img src="pics/our__arrows_right.svg" alt="" class="our__arrows_right">
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="customer">
+      <div class="customer__wrapper wrapper_section d-flex flex-column justify-content-center align-items-center">
+        <div class="customer__title font_mulish">What Our Customer Says</div>
+        <div class="customer__item d-flex">
+          <div class="customer__arrow_left"></div>
+            <div class="customer__info d-flex flex-column align-items-center">
+              <img class="customer__info_photo" src="pics/customer__photo.png" alt="">
+              <div class="customer__info_text font_rubik">I like Furniking.com and as compared to other company it's polices and customers support is very good easy to reach, also many time they unable to delivered. The ultricies are pregnant while the quis is suspended. Risus commodo viverra maecenas accumsan lacus vel facilisist amet.</div>
+              <div class="customer__info_name font_mulish">Angelina Joly</div>
+              <div class="customer__info_role font_rubik">Co-founder</div>
+            </div>
+          <div class="customer__arrow_right"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="latest">
+      <div class="wrapper wrapper_section d-flex flex-column justify-content-center align-items-center">
+        <div class="latest__title font_mulish">
+          Our Latest Articles
+        </div>
+        <div class="latest__products d-flex flex-wrap">
+          <!–– latest item start ––>
+          <div class="latest__item latest__item_1">
+            <div class="latest__item_wrapper d-flex flex-column font_mulish">
+              <div class="latest__item_date d-flex justify-content-between align-items-center">
+                <a class="latest__item_date_link d-flex justify-content-center">
+                 <img src="pics/latest__item_date_pic.svg" alt="" class="latest__item_date_pic">
+                  <div class="latest__item_date_text">Furniture</div>
+                </a>
+                <div class="latest__item_date_item">23 September 2022</div>
+              </div>
+              <div class="latest__item_text">
+                Begineer guide buying minimal sofa
+              </div>
+              <a class="latest__item_link">
+                Read more
+              </a>
+            </div>
+          </div>
+          <!–– latest item end ––>
+          <div class="latest__item latest__item_2">
+            <div class="latest__item_wrapper d-flex flex-column font_mulish">
+              <div class="latest__item_date d-flex justify-content-between align-items-center">
+                <a class="latest__item_date_link d-flex justify-content-center">
+                 <img src="pics/latest__item_date_pic.svg" alt="" class="latest__item_date_pic">
+                  <div class="latest__item_date_text">Furniture</div>
+                </a>
+                <div class="latest__item_date_item">23 September 2022</div>
+              </div>
+              <div class="latest__item_text">
+                Buying best minimal computer table
+              </div>
+              <a class="latest__item_link">
+                Read more
+              </a>
+            </div>
+          </div>
+          <div class="latest__item latest__item_3">
+            <div class="latest__item_wrapper d-flex flex-column font_mulish">
+              <div class="latest__item_date d-flex justify-content-between align-items-center">
+                <a class="latest__item_date_link d-flex justify-content-center">
+                 <img src="pics/latest__item_date_pic.svg" alt="" class="latest__item_date_pic">
+                  <div class="latest__item_date_text">Furniture</div>
+                </a>
+                <div class="latest__item_date_item">17 march 2022</div>
+              </div>
+              <div class="latest__item_text">
+                How to choose best modern bench
+              </div>
+              <a class="latest__item_link">
+                Read more
+              </a>
+            </div>
+          </div>
+          <div class="latest__item latest__item_4">
+            <div class="latest__item_wrapper d-flex flex-column font_mulish">
+              <div class="latest__item_date d-flex justify-content-between align-items-center">
+                <a class="latest__item_date_link d-flex justify-content-center">
+                 <img src="pics/latest__item_date_pic.svg" alt="" class="latest__item_date_pic">
+                  <div class="latest__item_date_text">Furniture</div>
+                </a>
+                <div class="latest__item_date_item">17 march 2022</div>
+              </div>
+              <div class="latest__item_text">
+                Best Summer Outfit
+Style in this Country
+              </div>
+              <a class="latest__item_link">
+                Read more
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer d-flex flex-column align-items-center">
+      <div class="footer__wrapper wrapper_section d-flex justify-content-between flex-wrap font_rubik">
+
+        <div class="footer__social d-flex flex-column">
+          <div class="footer__social_title d-flex align-items-center">
+            <img src="pics/search__logo.svg" alt="">
+            <div class="footer__social_title_text">Furniking</div>
+          </div>
+          <div class="footer__social_info">Funking is a popular Ecommerce site. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</div>
+          <div class="footer__social_pages d-flex justify-content-between">
+            <div class="footer__pages_item footer__pages_facebook">
+              <div class="footer__pages_item_pic footer__pages_facebook_pic"></div>
+            </div>
+            <div class="footer__pages_item footer__pages_twitter">
+              <div class="footer__pages_item_pic footer__pages_twitter_pic"></div>
+            </div>
+            <div class="footer__pages_item footer__pages_instagram">
+              <div class="footer__pages_item_pic footer__pages_instagram_pic"></div>
+            </div>
+            <div class="footer__pages_item footer__pages_pinterest">
+              <div class="footer__pages_item_pic footer__pages_pinterest_pic"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__links d-flex justify-content-between flex-wrap">
+          <!–– footer link list start ––>
+          <ul class="footer__links_list">
+            <li class="footer__links_title">Help</li>
+            <li>
+              <a href="" class="footer__links_item">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="" class="footer__links_item">Shipping & Delivery</a>
+            </li>
+            <li>
+              <a href="" class="footer__links_item">Refund Policy</a>
+            </li>
+            <li>
+              <a href="" class="footer__links_item">Track Your  Order</a>
+            </li>
+          </ul>
+          <!–– footer link list end ––>
+          <ul class="footer__links_list">
+            <li class="footer__links_title">Store</li>
+            <li>
+              <a href="" class="footer__links_item">Furniture</a>
+            </li>
+            <li>
+              <a href="" class="footer__links_item">Tabble</a>
+            </li>
+            <li>
+              <a href="" class="footer__links_item">Sofa</a>
+            </li>
+            <li>
+              <a href="" class="footer__links_item">Other</a>
+            </li>
+          </ul>
+          <ul class="footer__links_list">
+            <li class="footer__links_title">Supports</li>
+            <li>
+              <a href="" class="footer__links_item">Feedback</a>
+            </li>
+            <li>
+              <a href="" class="footer__links_item"> Contact us</a>
+            </li>
+            <li>
+              <a href="" class="footer__links_item">Download app</a>
+            </li>
+            <li>
+              <a href="" class="footer__links_item">Terms conditions</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="footer__line"></div>
+      <div class="footer__wrapper_last wrapper_section d-flex justify-content-between">
+        <div class="footer__rights font_rubik">© 2021 Funking - All rights reserved.</div>
+        <div class="footer__legal-info d-flex justify-content-between font_rubik">
+          <a href="" class="footer__legal-info_item">Privacy</a>
+          <a href="" class="footer__legal-info_item">Security</a>
+          <a href="" class="footer__legal-info_item">Terms</a>
+        </div>
+      </div>
+    </section>
+
+  </body>
+
+  <script src="engine.js"></script>
+</html>
